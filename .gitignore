@@ -1,0 +1,37 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Airflow
+logs/
+airflow_config/
+plugins/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.pem
+*.key
+
+# Airflow generated secrets
+simple_auth_manager_passwords.json.generated
+
+# Postgres data volume (if it's ever bind-mounted locally, not just a named volume)
+postgres_data/
