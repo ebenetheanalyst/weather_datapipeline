@@ -47,6 +47,9 @@ def transform_weather_data(raw_data):
 
     df = pd.DataFrame(records)
 
+    df["recorded_at"] = df["recorded_at"].astype(str)
+    df["ingested_at"] = df["ingested_at"].astype(str)
+
     return df
 
 

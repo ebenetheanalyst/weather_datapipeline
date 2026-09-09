@@ -8,9 +8,9 @@ x-airflow-common:
   environment:
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
 
-    AIRFLOW__API_AUTH__JWT_SECRET: "weather-airflow-jwt-secret-2026"
-
     AIRFLOW__CORE__EXECUTION_API_SERVER_URL: "http://airflow-api-server:8080/execution/"
+
+    AIRFLOW__API_AUTH__JWT_SECRET: "weather-airflow-jwt-secret-2026"
 
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/airflow
 
@@ -35,7 +35,7 @@ x-airflow-common:
   volumes:
     - ./dags:/opt/airflow/dags
     - ./src:/opt/airflow/src
-    - ./config:/opt/airflow/config_project
+    - ./config:/opt/airflow/config
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
 
