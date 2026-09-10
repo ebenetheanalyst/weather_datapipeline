@@ -18,6 +18,9 @@ OpenWeather API
    pgAdmin      Metabase Dashboard
  (SQL Query)   (Visualize Data)
 ```
+<p align="center">
+      <image src="image/weather-architecture.png" alt="Weather Data Pipeline Architecture" width="900"/>
+</p>
 
 All services run as Docker containers on a shared network, orchestrated via `docker-compose.yml`.
 
