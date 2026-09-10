@@ -4,20 +4,6 @@ An end-to-end data pipeline that extracts live weather data from the OpenWeather
 
 ## Architecture
 
-```
-OpenWeather API
-      │
-      ▼  (Extract)
- Airflow DAG
-      │  (Transform)
-      ▼
- PostgreSQL DB
-      │
-      ├──────────────┐
-      ▼              ▼
-   pgAdmin      Metabase Dashboard
- (SQL Query)   (Visualize Data)
-```
 <p align="center">
       <image src="image/Weather-architecture.png" alt="Weather Data Pipeline Architecture" width="600"/>
 </p>
