@@ -19,7 +19,7 @@ OpenWeather API
  (SQL Query)   (Visualize Data)
 ```
 <p align="center">
-      <image src="image/Weather-architecture.png" alt="Weather Data Pipeline Architecture" width="900"/>
+      <image src="image/Weather-architecture.png" alt="Weather Data Pipeline Architecture" width="600"/>
 </p>
 
 All services run as Docker containers on a shared network, orchestrated via `docker-compose.yml`.
